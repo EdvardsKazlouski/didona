@@ -1,0 +1,6 @@
+{
+    "channels": [
+        { "logo": "cartoon_network.png", "name": "Cartoon network" },
+        { "logo": "HBO.png", "name": "HBO" }
+    ]
+}
