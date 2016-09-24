@@ -11,22 +11,32 @@ ChannelSchema.set('toJSON', { virtuals: true });
 
 ChannelSchema.statics.findByName = function (name) {
     return new Promise((resolve, reject) => {
-        this.findOne({ name })
-            .then(resolve)
-            .catch(reject);
+        this.findOne({ name }, (error, channel) => {
+            if (error || !channel) {
+                return reject(error);
+            }
+            resolve(channel);
+        });
     });
 }
 
 ChannelSchema.statics.getAll = function () {
     return new Promise((resolve, reject) => {
-        this.find({}, (error, channels) => { resolve(channels); });
+        this.find({}, (error, channels) => {
+            if (error) {
+                return reject(error);
+            }
+            resolve(channels);
+        });
     });
 }
 
 ChannelSchema.statics.save = function ({ logo, name, isLocked = false }) {
     return new Promise((resolve, reject) => {
         this.findByName(name)
-            .then(reject)
+            .then((channel) => {
+                reject(channel);
+            })
             .catch(() => {
                 const channel = new this({
                     logo,
@@ -35,10 +45,9 @@ ChannelSchema.statics.save = function ({ logo, name, isLocked = false }) {
                 });
                 channel.save((error) => {
                     if (error) {
-                        reject(error);
-                    } else {
-                        resolve(channel);
+                        return reject(error);
                     }
+                    resolve(channel);
                 });
             });
     });
