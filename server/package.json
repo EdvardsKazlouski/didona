@@ -6,7 +6,8 @@
   "scripts": {
     "build": "./node_modules/.bin/babel-node ./tools/tasks/build",
     "dev": "./node_modules/.bin/nodemon --exec babel-node ./src/index.es --inspect=9222",
-    "fill": "./node_modules/.bin/babel-node ./tools/tasks/fill --inspect=9222",
+    "fill": "./node_modules/.bin/babel-node ./tools/tasks/fill",
+    "clean": "./node_modules/.bin/babel-node ./tools/tasks/clean",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

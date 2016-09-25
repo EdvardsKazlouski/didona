@@ -1,6 +1,15 @@
 {
     "channels": [
+        { "logo": "HBO.png", "name": "HBO" },
+        { "logo": "playboy.png", "name": "Playboy tv", "isLocked": true  },
+        { "logo": "eurosport.png", "name": "Eurosport" },
         { "logo": "cartoon_network.png", "name": "Cartoon network" },
-        { "logo": "HBO.png", "name": "HBO" }
+        { "logo": "dicosvery.png", "name": "Discovery" },
+        { "logo": "drama.png", "name": "Drama" },
+        { "logo": "history.png", "name": "History"},
+        { "logo": "warner-bros.png", "name": "Warner Bros.", "isLocked": true },
+        { "logo": "BBC.png", "name": "BBC world news" },
+        { "logo": "fox.png", "name": "Fox" },
+        { "logo": "4_music.png", "name": "4Music", "isRadio": true }
     ]
 }

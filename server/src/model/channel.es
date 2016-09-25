@@ -4,6 +4,7 @@ const ChannelSchema = new Schema({
     logo: { type: String, required: true },
     name: { type: String, required: true },
     isLocked: { type: Boolean, required: true },
+    isRadio: { type: Boolean, required: true }
 });
 
 ChannelSchema.set('toObject', { virtuals: true });
@@ -31,7 +32,7 @@ ChannelSchema.statics.getAll = function () {
     });
 }
 
-ChannelSchema.statics.save = function ({ logo, name, isLocked = false }) {
+ChannelSchema.statics.save = function ({ logo, name, isLocked = false, isRadio = false }) {
     return new Promise((resolve, reject) => {
         this.findByName(name)
             .then((channel) => {
@@ -41,7 +42,8 @@ ChannelSchema.statics.save = function ({ logo, name, isLocked = false }) {
                 const channel = new this({
                     logo,
                     name,
-                    isLocked
+                    isLocked,
+                    isRadio,
                 });
                 channel.save((error) => {
                     if (error) {
@@ -50,6 +52,17 @@ ChannelSchema.statics.save = function ({ logo, name, isLocked = false }) {
                     resolve(channel);
                 });
             });
+    });
+}
+
+ChannelSchema.statics.removeAll = function () {
+    return new Promise((resolve ,reject) => {
+        this.remove({}, (error) => {
+            if (error) {
+                return reject(error);
+            }
+            resolve();
+        })
     });
 }
 

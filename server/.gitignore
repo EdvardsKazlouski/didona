@@ -3,3 +3,4 @@ dist
 src/static/logo
 src/static/poster
 src/static/video
+npm-debug.log

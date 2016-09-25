@@ -1,3 +1,5 @@
+import path from 'path';
+import express from 'express';
 import cookieParser from 'cookie-parser';
 import CLC from 'cli-color';
 
@@ -31,6 +33,11 @@ export function setup (app) {
         app.use(hpp());
 
         app.use('/', apiRouter);
+
+        app.use('/static/video', express.static(path.join(__dirname, '../static/video')));
+        app.use('/static/audio', express.static(path.join(__dirname, '../static/audio')));
+        app.use('/static/logo', express.static(path.join(__dirname, '../static/logo')));
+        app.use('/static/poster', express.static(path.join(__dirname, '../static/poster')));
 
         app.use(errorHandler);
 

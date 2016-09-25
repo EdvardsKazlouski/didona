@@ -11,4 +11,10 @@ Remote for the didona it's an android app, that was written using `react-native`
 
 ## Run
 1. Open genymotion and start an virtual device.
-2. Just execute `react-native run-android`.
+2. Build packages and start UI using `react-native start`.
+3. Just execute for start emulation `react-native run-android`.
+
+
+Reboot
+Try reinstall node modules
+Try make react native web work
