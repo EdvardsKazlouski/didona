@@ -5,7 +5,7 @@ import {
   View
 } from 'react-native';
 
-class Home extends Component {
+class Root extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Root;

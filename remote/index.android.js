@@ -3,11 +3,12 @@
  * https://github.com/facebook/react-native
  * @flow
  */
+import React from 'react';
 import {
   AppRegistry,
 } from 'react-native';
 
 // components
-import App from './src/components/home';
+import Root from './src/components/root';
 
-AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('remote', () => Root);
