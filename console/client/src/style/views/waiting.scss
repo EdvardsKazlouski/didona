@@ -1,0 +1,31 @@
+
+.waiting-screen-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $black-shadow;
+}
+
+.waiting-screen-text {
+    color: $white-power;
+    font-family: 'Trench';
+    font-size: 40px;
+
+    animation: waiting-animation 3s infinite linear;
+}
+
+@keyframes waiting-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

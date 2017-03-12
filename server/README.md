@@ -11,4 +11,11 @@ You can fill database using:
 1. `npm run fill` - create array of channels and add 24h title events for each of its
 
 ## Development
+Just execute `npm run dev`
 
+## TODO:
+Async
+Use Caching
+Use gzip Compression ??
+Use nginx in Front of Node
+Minify and Concatenate JavaScript

@@ -54,6 +54,8 @@ const fillEvents = () => {
                         poster: event.poster,
                         title: event.title,
                         start: startTime,
+                        genres: event.genres,
+                        description: event.description,
                         duration: event.duration,
                         source: event.source,
                         channelId: channel.id,
@@ -72,8 +74,9 @@ const fillEvents = () => {
                 console.log(CLC.blue('FILLING EVENTS COMPLETED\n'));
                 resolve();
             })
-            .catch(() => {
+            .catch((error) => {
                 console.log(CLC.red('FILLING EVENTS ERROR\n'));
+                console.log(error);
                 resolve();
             });
     });
@@ -83,15 +86,16 @@ const fillProfile = () => {
     console.log(CLC.yellow('START FILLING PROFILE\n'));
 
     const profileAction = new Promise((resolve, reject) => {
-        Channel.findByName(mockProfile.unlockedChannelName)
-            .then((channel) => {
-                return Profile.save({
+        // Channel.findByName(mockProfile.unlockedChannelName)
+            // .then((channel) => {
+                // return Profile.save({
+                Profile.save({
                     email: mockProfile.profile.email,
-                    unlockedChannels: [ channel.id ],
-                });
-            })
-                .then(resolve)
-                .catch(reject);
+                    unlockedChannels: [ ],
+                })
+                    .then(resolve)
+                    .catch(reject);
+            // })
     });
 
     return new Promise((resolve, reject) => {
@@ -100,8 +104,8 @@ const fillProfile = () => {
                 console.log(CLC.blue('FILLING EVENTS COMPLETED\n'));
                 resolve();
             })
-            .catch(() => {
-                console.log(CLC.red('FILLING EVENTS ERROR\n'));
+            .catch((error) => {
+                console.log(CLC.red('FILLING PROFILE ERROR\n'));
                 resolve();
             });
     });
@@ -114,7 +118,7 @@ mongoose.connection.once('open', () => {
         .then(fillEvents)
         .then(fillProfile)
         .then(() => {
-            console.log(CLC.blue('FILLING COMPLETED\n'));
+            console.log(CLC.green('FILLING COMPLETED\n'));
             mongoose.connection.close();
         });
 });

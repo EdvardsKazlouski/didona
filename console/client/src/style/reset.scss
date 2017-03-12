@@ -1,0 +1,12 @@
+html, body, .app-container, .view-container {
+    margin: 0;
+    border: none;
+    padding: 0;
+
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
