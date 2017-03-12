@@ -12,10 +12,3 @@ You can fill database using:
 
 ## Development
 Just execute `npm run dev`
-
-## TODO:
-Async
-Use Caching
-Use gzip Compression ??
-Use nginx in Front of Node
-Minify and Concatenate JavaScript
