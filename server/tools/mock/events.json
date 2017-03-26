@@ -373,6 +373,15 @@
                 { "title": "Yes Man", "poster": "films/yes_man.jpg", "description": "A guy challenges himself to say \"yes\" to everything for an entire year.", "genres": [ "COMEDY", "ROMANCE" ], "duration": 6240000, "source": "yes_man.mp4" },
                 { "title": "Kill Bill: Volume 2", "poster": "films/kill_bill_2.jpg", "description": "The Bride continues her quest of vengeance against her former boss and lover Bill, the reclusive bouncer Budd and the treacherous, one-eyed Elle.", "genres": [ "ACTION", "CRIME", "THRILLER" ], "duration": 8160000, "source": "kill_bill_2.mp4" }
             ]
+        }, {
+            "name": "Playboy tv",
+            "events": [
+                { "title": "Kaligula", "poster": "erotica/kaligula.jpg", "description": "", "genres": [ "EROTICA", "SEX" ], "duration": 4200000, "source": "kaligula.mp4" },
+                { "title": "Emmanuelle", "poster": "erotica/emmanuelle.jpg", "description": "", "genres": [ "EROTICA", "SEX" ], "duration": 4200000, "source": "emmanuelle.mp4" },
+                { "title": "Histoire d'O", "poster": "erotica/histoire.jpg", "description": "", "genres": [ "EROTICA", "SEX" ], "duration": 4200000, "source": "histoire.mp4" },
+                { "title": "Salò o le 120 giornate di Sodoma ", "poster": "erotica/sodom.jpg", "description": "", "genres": [ "EROTICA", "SEX" ], "duration": 4200000, "source": "sodom.mp4" },
+                { "title": "The Exhibitionist Files ", "poster": "erotica/exhibitionist.jpg", "description": "", "genres": [ "EROTICA", "SEX" ], "duration": 4200000, "source": "exhibitionist.mp4" }
+            ]
         }
     ]
 }

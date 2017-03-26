@@ -11,7 +11,7 @@ Remote for the didona it's an android app, that was written using `react-native`
 
 ## Run
 1. Open genymotion and start an virtual device.
-2. Build packages and start UI using `react-native start` or `npm run start`.
+2. Build packages and start UI using `react-native start` or `npm run start` with `sudo` rights.
 3. Just execute for start emulation `react-native run-android` or `npm run open`.
 
 ## Debug
