@@ -9,6 +9,6 @@ import {
 } from 'react-native';
 
 // components
-import Root from './src/components/root';
+import Root from './src/android/components/root';
 
 AppRegistry.registerComponent('remote', () => Root);

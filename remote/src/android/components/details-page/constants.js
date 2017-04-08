@@ -1,0 +1,6 @@
+export default {
+    POSTER_WIDTH: 368,
+    POSTER_HEIGHT: 600,
+    HEADPHONE_HEIGHT: 40,
+    HEADPHONE_WIDTH: 40,
+};

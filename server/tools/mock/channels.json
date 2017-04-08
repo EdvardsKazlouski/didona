@@ -1,15 +1,16 @@
 {
     "channels": [
         { "logo": "HBO.png", "name": "HBO" },
-        { "logo": "playboy.png", "name": "Playboy tv" },
-        { "logo": "eurosport.png", "name": "Eurosport" },
+        { "logo": "drama.png", "name": "Drama" },
+        { "logo": "cinemax.png", "name": "Cinemax" },
+        { "logo": "fox.png", "name": "Fox" },
+        { "logo": "warner-bros.png", "name": "Warner Bros." },
         { "logo": "cartoon_network.png", "name": "Cartoon network" },
         { "logo": "discovery.png", "name": "Discovery" },
-        { "logo": "drama.png", "name": "Drama" },
+        { "logo": "4_music.png", "name": "4Music", "isRadio": true },
         { "logo": "history.png", "name": "History"},
-        { "logo": "warner-bros.png", "name": "Warner Bros." },
+        { "logo": "eurosport.png", "name": "Eurosport" },
         { "logo": "BBC.png", "name": "BBC world news" },
-        { "logo": "fox.png", "name": "Fox" },
-        { "logo": "4_music.png", "name": "4Music", "isRadio": true }
+        { "logo": "playboy.png", "name": "Playboy tv" }
     ]
 }

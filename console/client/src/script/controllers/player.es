@@ -30,7 +30,7 @@ export function startPlayout ({ source, isRadio }) {
     if (isRadio) {
         Renderer.setAudioSource(source, sourceCanPlayed.bind(this, isRadio), sourceEnded);
     } else {
-        Renderer.setVideoSource(source, sourceCanPlayed.bind(this, isRadio));
+        Renderer.setVideoSource(source, sourceCanPlayed.bind(this, isRadio), sourceEnded);
     }
 
     setTimeout(() => { timeoutFired = true; tryPlay(isRadio) }, 5000);

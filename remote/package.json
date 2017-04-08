@@ -1,34 +1,30 @@
 {
   "name": "remote",
-  "version": "1.0.0",
-  "description": "Remote control",
-  "main": "./index.android.js",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "open": "react-native run-android"
+    "open-android": "react-native run-android",
+    "test": "jest"
   },
-  "author": "Edvards Kazlouski",
-  "license": "ISC",
   "dependencies": {
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-native": "^0.34.1",
-    "react-native-android-wifi": "0.0.13"
-  },
-  "engines": {
-    "node": ">=6.6.0"
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.43.2",
+    "react-native-button": "^1.8.2"
   },
   "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
     "immutable": "^3.8.1",
+    "jest": "19.0.2",
     "nskeymirror": "^0.1.2",
-    "react-native": "^0.34.1",
-    "react-native-android-wifi": "0.0.13",
-    "react-native-button": "^1.8.2",
-    "react-native-loading-spinner-overlay": "^0.4.2",
-    "react-native-navbar": "^1.6.3",
     "react-native-redux-router": "^1.0.7",
+    "react-native-swiper": "^1.5.4",
     "react-redux": "^5.0.3",
+    "react-test-renderer": "16.0.0-alpha.6",
     "redux": "^3.6.0"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }

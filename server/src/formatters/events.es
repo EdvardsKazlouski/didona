@@ -6,6 +6,7 @@ export const formatEvents = (events = []) => {
 
 export const formatEvent = (event) => {
     return {
+        id: event.id,
         poster: event.poster,
         title: event.title,
         start: event.start,

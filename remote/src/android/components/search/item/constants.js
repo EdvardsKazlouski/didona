@@ -1,0 +1,5 @@
+export default {
+    SEARCH_ITEM_HEIGHT: 120,
+    SEARCH_ITEM_LOGO_WIDTH: 160,
+    SEARCH_ITEM_LOGO_HEIGHT: 80,
+};

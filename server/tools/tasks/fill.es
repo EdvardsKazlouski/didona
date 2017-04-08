@@ -50,7 +50,7 @@ const fillEvents = () => {
         events = events.concat(events, _.map(channel.events, (event) => {
             return new Promise((resolve ,reject) => {
                 Channel.findByName(channel.name).then((channel) => {
-                    return Event.save({
+                    Event.save({
                         poster: event.poster,
                         title: event.title,
                         start: startTime,
@@ -62,6 +62,7 @@ const fillEvents = () => {
                     })
                         .then(resolve)
                         .catch(reject);
+
                     startTime += event.duration;
                 });
             });

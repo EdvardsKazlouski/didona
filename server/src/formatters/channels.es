@@ -10,5 +10,6 @@ export const formatChannel = (channel = {}) => {
         logo: channel.logo,
         name: channel.name,
         isLocked: channel.isLocked,
+        isRadio: channel.isRadio,
     };
 };
